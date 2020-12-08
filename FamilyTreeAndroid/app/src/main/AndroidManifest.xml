@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FamilyTreeAndroid">
-        <activity android:name=".TreeCreatorActivity"></activity>
+        <activity android:name=".TreeCreatorActivity"/>
         <activity android:name=".TreeSeeActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

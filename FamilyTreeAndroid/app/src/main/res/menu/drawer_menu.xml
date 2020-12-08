@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/create_tree"
+            android:icon="@drawable/ic_createtree"
+            android:title="Создать дерево"/>
+        <item android:id="@+id/view_tree"
+            android:icon="@drawable/ic_seetree"
+            android:title="Посмотреть дерево"/>
+        <item android:id="@+id/send_tree"
+            android:icon="@drawable/ic_send"
+            android:title="Отправить дерево"/>
+        <item android:id="@+id/exit"
+            android:icon="@drawable/ic_exit"
+            android:title="Выйти"/>
+    </group>
+</menu>
