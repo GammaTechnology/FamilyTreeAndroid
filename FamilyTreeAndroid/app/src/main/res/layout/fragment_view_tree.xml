@@ -238,13 +238,9 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/round_button"
         app:backgroundTint="@color/indianred"
-<<<<<<< HEAD
-        app:layout_constraintStart_toEndOf="@+id/btnGgfatherMD"
-=======
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/btnGgfatherDD"
->>>>>>> CheckInfo
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
