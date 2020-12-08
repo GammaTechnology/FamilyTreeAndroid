@@ -8,6 +8,7 @@
 
     <Button
         android:id="@+id/btnI"
+        android:text="Я"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
@@ -28,6 +29,8 @@
 
     <Button
         android:id="@+id/btnMama"
+        android:text="Мама"
+        android:textSize="12dp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="130dp"
@@ -37,7 +40,6 @@
         android:layout_marginBottom="70dp"
         android:background="@drawable/round_button"
         android:textAllCaps="false"
-        android:textSize="20sp"
         app:backgroundTint="@color/indianred"
         app:layout_constraintBottom_toTopOf="@+id/btnI"
         app:layout_constraintEnd_toStartOf="@+id/btnI"
@@ -46,6 +48,8 @@
 
     <Button
         android:id="@+id/btnDad"
+        android:text="Папа"
+        android:textSize="12dp"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
@@ -61,6 +65,8 @@
 
     <Button
         android:id="@+id/btnGrandmaM"
+        android:text="Бабушка"
+        android:textSize="7dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="60dp"
@@ -75,6 +81,8 @@
 
     <Button
         android:id="@+id/btnGrandpaM"
+        android:text="Дедушка"
+        android:textSize="7dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="25dp"
@@ -88,33 +96,9 @@
         app:layout_constraintTop_toBottomOf="@+id/btnGgfatherMD" />
 
     <Button
-        android:id="@+id/btnGrandpaD"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/round_button"
-        app:backgroundTint="@color/steelblue"
-        app:layout_constraintBottom_toTopOf="@+id/btnDad"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGgfatherDM" />
-
-    <Button
-        android:id="@+id/btnGgmotherDM"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/round_button"
-        app:backgroundTint="@color/indianred"
-        app:layout_constraintStart_toEndOf="@+id/btnGgfatherDM"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btnGrandmaD"
+        android:text="Бабушка"
+        android:textSize="7dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
@@ -128,7 +112,53 @@
         app:layout_constraintTop_toBottomOf="@+id/btnGgfatherDD" />
 
     <Button
+        android:id="@+id/btnGrandpaD"
+        android:text="Дедушка"
+        android:textSize="7dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/steelblue"
+        app:layout_constraintBottom_toTopOf="@+id/btnDad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGgfatherDM" />
+
+    <Button
+        android:id="@+id/btnGgfatherMM"
+        android:text="Прадедушка"
+        android:textSize="4dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/steelblue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGgmotherMM"
+        android:text="Прабабушка"
+        android:textSize="4dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/indianred"
+        app:layout_constraintStart_toEndOf="@+id/btnGgfatherMM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/btnGgfatherMD"
+        android:text="Прадедушка"
+        android:textSize="4dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
@@ -141,6 +171,8 @@
 
     <Button
         android:id="@+id/btnGgfatherDM"
+        android:text="Прадедушка"
+        android:textSize="4dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
@@ -152,7 +184,51 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btnGgfatherDD"
+        android:text="Прадедушка"
+        android:textSize="4dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/steelblue"
+        app:layout_constraintStart_toEndOf="@+id/btnGgmotherDM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGgmotherDM"
+        android:text="Прабабушка"
+        android:textSize="4dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/indianred"
+        app:layout_constraintStart_toEndOf="@+id/btnGgfatherDM"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGgmotherMD"
+        android:text="Прабабушка"
+        android:textSize="4dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/indianred"
+        app:layout_constraintStart_toEndOf="@+id/btnGgfatherMD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/btnGgmotherDD"
+        android:text="Прабабушка"
+        android:textSize="4dp"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
@@ -166,154 +242,5 @@
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/btnGgfatherDD"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnGgfatherMM"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/round_button"
-        app:backgroundTint="@color/steelblue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnGgmotherMM"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/round_button"
-        app:backgroundTint="@color/indianred"
-        app:layout_constraintStart_toEndOf="@+id/btnGgfatherMM"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnGgfatherDD"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/round_button"
-        app:backgroundTint="@color/steelblue"
-        app:layout_constraintStart_toEndOf="@+id/btnGgmotherDM"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnGgmotherMD"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/round_button"
-        app:backgroundTint="@color/indianred"
-        app:layout_constraintStart_toEndOf="@+id/btnGgfatherMD"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Я"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnI" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Мама"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMama" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Папа"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDad" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Бабушка"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGrandmaM" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Дедушка"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGrandpaM" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Бабушка"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGrandmaD" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Дедушка"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGrandpaD" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Прадедушка"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGgfatherMM" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Прабабушка"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGgmotherMM" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

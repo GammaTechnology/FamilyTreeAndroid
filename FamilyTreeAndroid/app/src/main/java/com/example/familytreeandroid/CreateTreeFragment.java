@@ -7,8 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class CreateTreeFragment extends Fragment {
+
+    private Button button;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
