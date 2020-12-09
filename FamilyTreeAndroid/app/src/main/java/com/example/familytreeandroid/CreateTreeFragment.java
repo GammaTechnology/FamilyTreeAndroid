@@ -1,5 +1,6 @@
 package com.example.familytreeandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -24,6 +25,16 @@ public class CreateTreeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_create_tree, container, false);
+        View v = inflater.inflate(R.layout.fragment_view_tree, container, false);
+
+        button = v.findViewById(R.id.btnI);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
+                startActivity(intent);
+            }
+        });
+        return v;
     }
 }
