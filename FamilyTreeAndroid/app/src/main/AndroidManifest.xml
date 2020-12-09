@@ -15,8 +15,7 @@
         <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginActivity"
-            android:label="YourAppName"
-            android:noHistory="true">
+            android:label="YourAppName">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

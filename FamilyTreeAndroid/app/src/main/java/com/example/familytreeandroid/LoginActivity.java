@@ -29,8 +29,9 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(LoginActivity.this, "Authorisation", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "Вы авторизировались!", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                LoginActivity.this.finish();
             }
         });
 

@@ -18,6 +18,7 @@ public class ReadInfoTreeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_read_info_tree);
 
         toolbar = findViewById(R.id.toolbar_read_info);
+        toolbar.setTitle("Подробнее");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
