@@ -4,24 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReadInfoFragment">
+    tools:context=".ViewInfoTreeActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/indianred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/steelblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/TextView1"
         android:layout_width="250dp"
         android:layout_height="40dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="304dp"
         android:background="@drawable/textview_up"
         android:paddingLeft="4dp"
         android:paddingRight="4dp"
         android:text="Информация"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextView2"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -31,11 +65,11 @@
         android:paddingRight="4dp"
         android:text="Имя"
         android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView1"
-        app:layout_constraintStart_toStartOf="@+id/TextView1"
-        app:layout_constraintTop_toBottomOf="@+id/TextView1" />
+        app:layout_constraintEnd_toEndOf="@+id/TextView3"
+        app:layout_constraintStart_toStartOf="@+id/TextView3"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextView3"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -45,11 +79,11 @@
         android:paddingRight="4dp"
         android:text="Фамилия"
         android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView2"
-        app:layout_constraintStart_toStartOf="@+id/TextView2"
-        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
+        app:layout_constraintEnd_toEndOf="@+id/TextView1"
+        app:layout_constraintStart_toStartOf="@+id/TextView1"
+        app:layout_constraintTop_toBottomOf="@+id/TextView1" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextView4"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -59,11 +93,11 @@
         android:paddingRight="4dp"
         android:text="Отчество"
         android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView3"
-        app:layout_constraintStart_toStartOf="@+id/TextView3"
-        app:layout_constraintTop_toBottomOf="@+id/TextView3" />
+        app:layout_constraintEnd_toEndOf="@+id/TextView2"
+        app:layout_constraintStart_toStartOf="@+id/TextView2"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextView5"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -77,10 +111,10 @@
         app:layout_constraintStart_toStartOf="@+id/TextView4"
         app:layout_constraintTop_toBottomOf="@+id/TextView4" />
 
-    <EditText
+    <TextView
         android:id="@+id/TextView6"
         android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_height="40dp"
         android:background="@drawable/textview_down"
         android:paddingLeft="4dp"
         android:paddingRight="4dp"
@@ -89,21 +123,5 @@
         app:layout_constraintEnd_toEndOf="@+id/TextView5"
         app:layout_constraintStart_toStartOf="@+id/TextView5"
         app:layout_constraintTop_toBottomOf="@+id/TextView5" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_bg"
-        android:backgroundTint="@color/black"
-        android:text="Вернуться к дереву"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
