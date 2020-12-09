@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FamilyTreeAndroid">
+        <activity android:name=".ReadInfoTreeActivity"></activity>
+        <activity android:name=".ViewInfoTreeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity
