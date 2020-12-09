@@ -8,102 +8,180 @@
 
     <TextView
         android:id="@+id/TextView1"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="40dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/textview_up"
         android:paddingLeft="4dp"
         android:paddingRight="4dp"
         android:text="Информация"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/TextView2"
-        android:layout_width="250dp"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:hint="midbuttonshape"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:text="Имя"
-        android:textSize="28sp"
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
         app:layout_constraintEnd_toEndOf="@+id/TextView1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TextView1"
-        app:layout_constraintTop_toBottomOf="@+id/TextView1" />
+        app:layout_constraintTop_toBottomOf="@+id/TextView1">
 
-    <EditText
-        android:id="@+id/TextView3"
-        android:layout_width="250dp"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Фамилиия" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:hint="midbuttonshape"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:text="Фамилия"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView2"
-        app:layout_constraintStart_toStartOf="@+id/TextView2"
-        app:layout_constraintTop_toBottomOf="@+id/TextView2" />
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
 
-    <EditText
-        android:id="@+id/TextView4"
-        android:layout_width="250dp"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Имя" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:hint="midbuttonshape"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:text="Отчество"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView3"
-        app:layout_constraintStart_toStartOf="@+id/TextView3"
-        app:layout_constraintTop_toBottomOf="@+id/TextView3" />
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-    <EditText
-        android:id="@+id/TextView5"
-        android:layout_width="250dp"
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Отчество" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:hint="midbuttonshape"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:text="Дата рождения"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView4"
-        app:layout_constraintStart_toStartOf="@+id/TextView4"
-        app:layout_constraintTop_toBottomOf="@+id/TextView4" />
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <EditText
-        android:id="@+id/TextView6"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:background="@drawable/textview_down"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:text="Биография"
-        android:textSize="28sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextView5"
-        app:layout_constraintStart_toStartOf="@+id/TextView5"
-        app:layout_constraintTop_toBottomOf="@+id/TextView5" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Дата рождения" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_bg"
-        android:backgroundTint="@color/black"
-        android:text="Вернуться к дереву"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Родной город" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Биография" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
