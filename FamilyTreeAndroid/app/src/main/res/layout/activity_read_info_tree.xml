@@ -40,15 +40,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:text="Фамилиия" />
+            android:text="Фамилиия"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight=".75"
+            android:ems="10"
+            android:background="@drawable/rounded_edittext"
             android:maxLength="15"
-            android:background="@drawable/rounded_edittext" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -68,15 +71,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:text="Имя" />
+            android:text="Имя"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight=".75"
+            android:ems="10"
+            android:background="@drawable/rounded_edittext"
             android:maxLength="15"
-            android:background="@drawable/rounded_edittext" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -96,15 +102,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:text="Отчество" />
+            android:text="Отчество"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight=".75"
+            android:ems="10"
+            android:background="@drawable/rounded_edittext"
             android:maxLength="15"
-            android:background="@drawable/rounded_edittext" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -124,15 +133,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:text="Дата рождения" />
+            android:text="Дата рождения"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext"
+            android:elegantTextHeight="false"
             android:maxLength="15"
-            android:background="@drawable/rounded_edittext" />
+            android:textIsSelectable="false"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -152,15 +165,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:text="Родной город" />
+            android:text="Родной город"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight=".75"
+            android:ems="10"
+            android:background="@drawable/rounded_edittext"
             android:maxLength="15"
-            android:background="@drawable/rounded_edittext" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -179,15 +195,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
-            android:text="Биография" />
+            android:text="Биография"
+            android:textSize="12sp" />
 
         <EditText
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginLeft="10dp"
             android:layout_weight=".75"
-            android:maxLength="50"
-            android:background="@drawable/rounded_edittext" />
+            android:background="@drawable/rounded_edittext"
+            android:maxLength="50" />
 
     </LinearLayout>
     
