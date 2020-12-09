@@ -13,6 +13,9 @@
         <item android:id="@+id/send_tree"
             android:icon="@drawable/ic_send"
             android:title="Отправить дерево"/>
+        <item android:id="@+id/language"
+            android:icon="@drawable/ic_language"
+            android:title="Изменить язык"/>
         <item android:id="@+id/exit"
             android:icon="@drawable/ic_exit"
             android:title="Выйти"/>
