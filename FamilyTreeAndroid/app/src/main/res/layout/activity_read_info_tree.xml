@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ReadInfoTreeActivity">
 
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar_read_info">
+    </include>
 
     <TextView
         android:id="@+id/TextView1"
