@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E1E1E1"
     tools:context=".ReadInfoTreeActivity">
 
     <include layout="@layout/toolbar"
@@ -12,18 +13,20 @@
 
     <TextView
         android:id="@+id/TextView1"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/textview_up"
+        android:layout_marginTop="55dp"
+        android:background="#E1E1E1"
         android:paddingLeft="4dp"
         android:paddingRight="4dp"
         android:text="Информация"
+        android:textAlignment="center"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="4dp"/>
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -198,9 +201,40 @@
             android:layout_height="wrap_content"
             android:layout_weight=".25"
             android:text="Биография"
-            android:textSize="12sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_width="0dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".75"
+            android:background="@drawable/rounded_edittext"
+            android:maxLength="50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E1E1E1"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_marginTop="60dp"
+            android:text="Картинка"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/image_button"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_marginLeft="10dp"
@@ -209,5 +243,5 @@
             android:maxLength="50" />
 
     </LinearLayout>
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,7 +23,7 @@ public class CreateTreeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_view_tree, container, false);
+        View v = inflater.inflate(R.layout.fragment_create_tree, container, false);
 
         Button btnI = v.findViewById(R.id.btnI);
         Button btnMama = v.findViewById(R.id.btnMama);
