@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -62,6 +63,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new ViewTreeFragment()).commit();
                 break;
             case R.id.send_tree:
+                try {
+                    final String msg="Hello world!";
+                    Intent telegramIntent = new Intent(Intent.ACTION_VIEW);
+                    telegramIntent.setData(Uri.parse("http://telegram.me/USERID"));
+                    telegramIntent.putExtra(Intent.EXTRA_TEXT, msg);
+                    startActivity(telegramIntent);
+
+                } catch (Exception e) {
+                    // show error message
+                }
                 break;
             case R.id.exit:
                 logout(this);
@@ -102,4 +113,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         });
         builder.show();
     }
+
 }
