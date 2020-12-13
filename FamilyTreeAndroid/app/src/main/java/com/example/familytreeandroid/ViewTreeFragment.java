@@ -10,22 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ViewTreeFragment extends Fragment {
-    
-    private Button button;
+
+    public static int check1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
 
         View v = inflater.inflate(R.layout.fragment_view_tree, container, false);
 
@@ -48,6 +47,7 @@ public class ViewTreeFragment extends Fragment {
         btnI.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 0;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -55,6 +55,7 @@ public class ViewTreeFragment extends Fragment {
         btnMama.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 1;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -62,6 +63,7 @@ public class ViewTreeFragment extends Fragment {
         btnDad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 2;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -69,6 +71,7 @@ public class ViewTreeFragment extends Fragment {
         btnGrandmaM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 3;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -76,6 +79,7 @@ public class ViewTreeFragment extends Fragment {
         btnGrandpaM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 4;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -83,6 +87,7 @@ public class ViewTreeFragment extends Fragment {
         btnGrandmaD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 5;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -90,6 +95,7 @@ public class ViewTreeFragment extends Fragment {
         btnGrandpaD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 6;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -97,6 +103,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgfatherMM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 7;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -104,6 +111,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgmotherMM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 8;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -111,6 +119,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgfatherMD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 9;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -118,6 +127,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgmotherMD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 10;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -125,6 +135,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgfatherDM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 11;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -132,6 +143,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgmotherDM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 12;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -139,6 +151,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgfatherDD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 13;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }
@@ -146,6 +159,7 @@ public class ViewTreeFragment extends Fragment {
         btnGgmotherDD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check1 = 14;
                 Intent intent = new Intent(getActivity(), ViewInfoTreeActivity.class);
                 startActivity(intent);
             }

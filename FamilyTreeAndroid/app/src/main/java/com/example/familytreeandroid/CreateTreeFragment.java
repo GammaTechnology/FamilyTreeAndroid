@@ -1,5 +1,6 @@
 package com.example.familytreeandroid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,14 +11,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class CreateTreeFragment extends Fragment {
 
+    public static int check;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -47,6 +50,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 0;
             }
         });
         btnMama.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +58,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 1;
             }
         });
         btnDad.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +66,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 2;
             }
         });
         btnGrandmaM.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +74,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 3;
             }
         });
         btnGrandpaM.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +82,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 4;
             }
         });
         btnGrandmaD.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +90,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 5;
             }
         });
         btnGrandpaD.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +98,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 6;
             }
         });
         btnGgfatherMM.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +106,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 7;
             }
         });
         btnGgmotherMM.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +114,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 8;
             }
         });
         btnGgfatherMD.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +122,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 9;
             }
         });
         btnGgmotherMD.setOnClickListener(new View.OnClickListener() {
@@ -117,6 +130,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 10;
             }
         });
         btnGgfatherDM.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +138,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 11;
             }
         });
         btnGgmotherDM.setOnClickListener(new View.OnClickListener() {
@@ -131,6 +146,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 12;
             }
         });
         btnGgfatherDD.setOnClickListener(new View.OnClickListener() {
@@ -138,6 +154,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 13;
             }
         });
         btnGgmotherDD.setOnClickListener(new View.OnClickListener() {
@@ -145,6 +162,7 @@ public class CreateTreeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReadInfoTreeActivity.class);
                 startActivity(intent);
+                check = 14;
             }
         });
         return v;
