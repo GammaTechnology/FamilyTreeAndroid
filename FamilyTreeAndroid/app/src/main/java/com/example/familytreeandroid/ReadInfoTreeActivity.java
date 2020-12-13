@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,28 +34,45 @@ public class ReadInfoTreeActivity extends AppCompatActivity {
     Bitmap newImage;
 
     public int id = CreateTreeFragment.check;
+    private int i = 0;
 
-    public static String[] iMass = new String[6];
-    public static String[] dedMass = new String[6];
-    public static String[] mumMass = new String[6];
-    public static String[] gmdMass = new String[6];
-    public static String[] gfdMass = new String[6];
-    public static String[] gmmMass = new String[6];
-    public static String[] gfmMass = new String[6];
-    public static String[] ggmdMass = new String[6];
-    public static String[] ggfdMass = new String[6];
-    public static String[] ggmd1Mass = new String[6];
-    public static String[] ggfd1Mass = new String[6];
-    public static String[] ggmmMass = new String[6];
-    public static String[] ggfmMass = new String[6];
-    public static String[] ggmm1Mass = new String[6];
-    public static String[] ggfm1Mass = new String[6];
+    public static String[] iMass = new String[] {"Фомов", "Максим", "Александрович", "02.04.2003", "Минск", ""};
+    public static String[] dedMass = new String[] {"Фомов", "Александр", "Петрович", "16.06.1972", "Лукомль", ""};
+    public static String[] mumMass = new String[] {"Фомова", "Елена", "Вячеславовна", "30.07.1977", "Витебск", ""};
+    public static String[] gmdMass = new String[] {"Фомова", "Аня", "Степановна", "02.01.1946", "Лукомль", ""};
+    public static String[] gfdMass = new String[] {"Фомов", "Пётр", "Александрович", "03.01.1946", "Лукомль", ""};
+    public static String[] gmmMass = new String[] {"Василевская", "Людмила", "Васильевна", "19.07.1952", "Гродно", ""};
+    public static String[] gfmMass = new String[] {"Василевский", "Вячеслав", "Егорович", "25.08.1945", "Витебск", ""};
+    public static String[] ggmdMass = new String[] {"Муха", "Елена", "Денисовна", "01.03.1925", "Витебск", ""};
+    public static String[] ggfdMass = new String[] {"Муха", "Степан", "Егорович", "05.09.1923", "Витебск", ""};
+    public static String[] ggmd1Mass = new String[] {"Фомова", "Светлана", "Денисовна", "01.03.1925", "Гродно", ""};
+    public static String[] ggfd1Mass = new String[] {"Фомов", "Степан", "Васильевич", "12.06.1918", "Могилёв", ""};
+    public static String[] ggmmMass = new String[] {"Дрозд", "Анна", "Семёновна", "16.06.1917", "Могилёв", ""};
+    public static String[] ggfmMass = new String[] {"Дрозд", "Василий", "Денисовна", "02.03.1920", "Могилёв", ""};
+    public static String[] ggmm1Mass = new String[] {"Василевская", "Фаина", "Семёновна", "08.07.1922", "Витебск", ""};
+    public static String[] ggfm1Mass = new String[] {"Василевский", "Егор", "Васильевич", "01.01.1922", "Горбачёво", ""};
     public static Bitmap[] photo = new Bitmap[15];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_read_info_tree);
+
+        photo[0] = BitmapFactory.decodeResource(getResources(), R.drawable.i);
+        photo[1] = BitmapFactory.decodeResource(getResources(), R.drawable.mam);
+        photo[2] = BitmapFactory.decodeResource(getResources(), R.drawable.dad);
+        photo[3] = BitmapFactory.decodeResource(getResources(), R.drawable.bab);
+        photo[4] = BitmapFactory.decodeResource(getResources(), R.drawable.bab1);
+        photo[5] = BitmapFactory.decodeResource(getResources(), R.drawable.ded1);
+        photo[6] = BitmapFactory.decodeResource(getResources(), R.drawable.bab1);
+        photo[7] = BitmapFactory.decodeResource(getResources(), R.drawable.ded);
+        photo[8] = BitmapFactory.decodeResource(getResources(), R.drawable.bab);
+        photo[9] = BitmapFactory.decodeResource(getResources(), R.drawable.vev);
+        photo[10] = BitmapFactory.decodeResource(getResources(), R.drawable.bab);
+        photo[11] = BitmapFactory.decodeResource(getResources(), R.drawable.ded1);
+        photo[12] = BitmapFactory.decodeResource(getResources(), R.drawable.bab1);
+        photo[13] = BitmapFactory.decodeResource(getResources(), R.drawable.ded);
+        photo[14] = BitmapFactory.decodeResource(getResources(), R.drawable.bab1);
 
         surname = findViewById(R.id.surname);
         name = findViewById(R.id.name);
